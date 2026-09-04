@@ -2,6 +2,10 @@
     --green-color: #00FF00;
     --white-color: #FFFFFF;
     --black-color: #000000;
+    --btnBg:var(--black-color)
+    --btnFontColor:var(--white-color)
+    --btnBg:var(--white-color)
+    --btnFontColor:var(--black-color)
 }
 
 
@@ -28,9 +32,30 @@ li {
 .light-theme {
     background-color: var(--green-color);
     color: var(--black-color);
+    --btnBg:var(--black-color)
+    --btnFontColor:var(--white-color)
+
 }
 
 .dark-theme {
     background-color: var(--black-color);
     color: var(--white-color);
+    --btnBg:var(--white-color)
+    --btnFontColor:var(--black-color)
+}
+
+.btn {
+    color: var(--black-color);
+    background-color: var(--white-color);
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border:none
+}
+
+btn:focus {
+    outline: none;
 }
